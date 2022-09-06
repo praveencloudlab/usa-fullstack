@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <hr/>
+
+    <form action="/api/v1/products" method="post">
+        First name: <input type="text" name="fname"/> <br/>
+        Age: <input type="number" name="age" max="80" min="16"/> <br/>
+        Email: <input type="email" name="email"/> <br/>
+        DOB: <input type="date"/> <br/>
+        DOJ: <input type="datetime"/> <br/>
+        Password: <input type="password" name="pwd"/> <br/>
+        Upload Profile: <input type="file"/> <br/>
+        Age: <input type="range"/><br/>
+        Select color: <input type="color"/> <br/>
+        DOJ: <input type="datetime-local"/> <br/>
+        <input type="radio" name="gender"/>Male
+        <input type="radio" name="gender"/>Female <br/>
+        Hobbies: <input type="checkbox"/>Football
+        <input type="checkbox"/>Volley Ball
+        <input type="checkbox"/>Chess <br/>
+        Seelct Dept: <select>
+            <option>--select one --</option>
+            <option>HR</option>
+            <option>Acconts</option>
+            <option>IT</option>
+            <option>Payroll</option>
+        </select> <br/>
+        <input type="button" value="Normal Button"/>
+        <input type="submit" value="Save"/>
+        <input type="reset" value="Clear All"/>
+        <hr/>
+        <button>Submit Form</button>
+        <button type="button">Just btn</button>
+        <button type="reset">Reset all</button>
+        <button type="menu">menu btn</button>
+    </form>
+
+
+    
+</body>
+</html>
