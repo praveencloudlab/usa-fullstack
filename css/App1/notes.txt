@@ -1,0 +1,13 @@
+CSS Notes
+=========================
+
+1. Layouts and Responsive Design
+2. Box Model
+3. stylings, fonts
+4. Nesting CSS
+5. Inline and external CSS
+
+
+
+
+
