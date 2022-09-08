@@ -182,6 +182,7 @@ console.log(getLunch(65,98));
 
    // return more than one function 
 
+   /*
    function validateForm(){
     console.log("validating form");
 
@@ -209,6 +210,9 @@ console.log(getLunch(65,98));
   validateObj.validateFname();
   validateObj.validateEmail();
   validateObj.validateAge();
+
+  */
+
 
 
 
