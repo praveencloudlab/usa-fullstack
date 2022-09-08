@@ -28,6 +28,7 @@ Browser environment
 1. V8 Engine - Chrome Browser
 2. Chakra - IE
 3. Firefox - Spider Monkey
+4. Safari - Raheno
 
 Non browser environment
 -------------------------
@@ -40,6 +41,10 @@ implemented nativly by browser vendors & abstracted as JavaScript objects & func
 
 browser-APIs  :
     ==> DOM,XHR,Timer,....
+
+    Ecma Script => ES5 old version
+		   ES6
+		   ES7
 
 
 using DOM API
