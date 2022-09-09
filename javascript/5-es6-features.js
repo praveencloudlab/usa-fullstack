@@ -175,7 +175,7 @@ let menu=[
      //let results=employees.filter(emp=>emp.salary>=20000);
      //console.log(results);
 
-     let result=employees.filter(emp=>emp.salary>=20000)
+     //let result=employees.filter(emp=>emp.salary>=20000)
      //.find(emp=>emp.id===11)
      //.map(emp=>emp.id===11)
      //.forEach(emp=>console.log(emp))
@@ -184,7 +184,81 @@ let menu=[
 
 
 
+      //---------------------------
+      // promise api
+      //---------------------------
 
+      // producer / dependency
+
+      /*
+
+      let trainer={ // JSON
+        askQuestionSync(q){ // synchronous
+          // ... 10 secs
+          return "this is answer for "+q
+        },
+
+        askQuestionAsync(q){
+          let promise=new Promise((resolv,reject)=>{
+            setTimeout(()=>{
+              console.log("trainer resolve/reject the primise");
+            },5000)
+          })
+          return promise
+        }
+      }
+
+    // let a1= trainer.askQuestionSync("q1");
+     //console.log(a1);
+     //let proObj=trainer.askQuestionAsync("q2");
+     //proObj.resolv
+    // proObj.reject
+
+
+    // consumer/dependent
+    let student={
+      learn(){
+        //trainer.askQuestionSync("Q1") // pull // synchrous
+        console.log("student is asking question on trainer..");
+        let promise=trainer.askQuestionAsync("Q2")
+        console.log("student got a promise from trainer , defer actions to future..");
+
+        promise.then(answer=>{
+          console.log(answer);
+          console.log("thank you trainer for the answer..");
+        })
+        .catch(error=>{
+          console.log(error);
+        })
+
+        console.log("continue with other learnings....");
+
+      }
+    }
+
+    student.learn();
+    */
+
+    // Todo APP
+
+    let service={
+       fetchTodos(){
+       fetch("https://jsonplaceholder.typicodee.com/todos?_limit=5")
+       .then(response=>response.json())
+       .then(todos=>{
+        console.log(todos);
+       })
+       .catch(error=>{
+        console.log('failed due to '+error);
+       })
+
+       // let promise=new Promise((resolve,reject)=>{
+          
+       // })
+       }
+    }
+
+    service.fetchTodos();
 
 
 
