@@ -1,0 +1,34 @@
+Type scipt Dta types
+-----------------------------
+-> static
+        -> built in
+        -> user defined
+-> generic
+-> decorators
+
+
+built in
+---------------
+-> Number
+-> String
+-> Boolean
+-> Void
+-> any
+
+user defined
+----------------
+-> Array
+-> Class
+-> Functions
+-> Enum
+-> Interface
+-> Tuple
+
+generic
+--------
+
+
+
+decorators : '@'
+------------
+
