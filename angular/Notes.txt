@@ -1,0 +1,40 @@
+Data Binding
+=================
+1. string interpolation : {{}}
+2. Property Binding: [] (One way binding: from .ts to .html)
+3. Event binding: () (One way binding: from .html to .ts)
+4. Two way binding: [()] : two way binding ( html <---> ts)
+
+
+Directives
+---------------
+
+1. Component Directives
+2. Structural Directives
+3. Attribute Directives
+
+2. Structural Directives
+---------------------------
+    -> ngFor
+    -> ngSwitch
+    -> ngIf
+
+3. Attribute Directives
+------------------------
+    -> ngModel
+    -> ngClass
+    -> ngStyle
+
+    
+
+
+
+
+
+
+
+
+
+
+
+

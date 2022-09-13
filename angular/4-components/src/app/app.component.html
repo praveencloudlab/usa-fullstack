@@ -1,0 +1,107 @@
+<div class="container mt-2">
+  
+  <h1>{{title}}</h1> <hr/>
+  <h2>Hello, {{name}}</h2>
+
+  <div>   
+    <img [src]="imagePath" width="300px"/>
+  </div>
+
+  <div [hidden]="isVisible">
+    <h1>This is Div Text</h1>
+  </div>
+  <input type="checkbox" (click)="f4()">Hide
+<hr/>
+<button (click)="f1()" >Show Div</button>
+<button (click)="f2()" >Hide Div</button>
+<button (click)="f3()">Toggle View</button>
+
+<hr/>
+<div>
+  {{myText}}
+</div>
+
+<input type="text" [value]="myText" [(ngModel)]="myText"/>
+
+<hr/>
+
+<div>
+  {{firstName}}
+</div>
+<input type="text" value="Name goes here" #fn (keyup)="f5(fn)">
+<br/>
+<h1>{{fn.value}}</h1>
+
+<hr/>
+<select #country (change)="f6(country)">
+  <option>India</option>
+  <option>US</option>
+  <option>UK</option>
+</select>
+
+<hr/>
+<h2>You have selected: {{country.value}} </h2>
+
+<hr/>
+
+
+<div *ngIf="isSubmited">
+  <h1>Div Information</h1>
+</div>
+<hr/>
+
+<div *ngIf="age>=25">
+  <h1>Yes</h1>
+</div>
+
+<hr/>
+<h1>{{numbers}}</h1>
+
+ <table class="table table-hover">
+  <thead>
+  <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Salary</th>
+  </tr>
+</thead>
+ 
+  <tbody>
+    <tr *ngFor="let emp of employees">
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.salary}}</td>
+    </tr>
+  </tbody>
+ </table>
+
+ <hr/>
+
+ <ol>
+    <li *ngFor="let emp of employees">{{emp.name}}</li>
+ </ol>
+
+ <hr/>
+ <div [ngStyle]="{'font-size':'60px','color':'blue'}">
+     Hello
+ </div>
+ <hr/>
+  <select #cc (change)="f7(cc)">
+    <option>red</option>
+    <option>blue</option>
+    <option>green</option>
+
+  </select>
+  {{dynamicStyle}}
+
+  <div [ngClass]="dynamicStyle">
+    Dynamic color
+  </div>
+
+
+ <div [ngClass]="'s1 s2'">
+  Praveen
+</div>
+
+
+</div>
