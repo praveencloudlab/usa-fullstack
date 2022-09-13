@@ -1,0 +1,21 @@
+
+<div>
+    <app-btngen [buttonLabels]=buttonLabels></app-btngen>
+    <app-employee name="Ozvitha" address="UK" ></app-employee>
+    <table class="table table-striped">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            </thead>
+       
+            <tbody>
+            <tr *ngFor="let emp of emps">
+             <app-employee [emp]=emp></app-employee>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
