@@ -1,0 +1,27 @@
+<div>
+
+<div>
+    <input [(ngModel)]="filterText" placeholder="filter data" class="form-control col-4"/>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let emp of emps | searchFilter:filterText ">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+</div>

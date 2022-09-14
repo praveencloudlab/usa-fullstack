@@ -25,6 +25,15 @@ Directives
     -> ngClass
     -> ngStyle
 
+Pipes
+---------------------
+    -> Currency Pipe
+    -> Date Pipe
+    -> Json Pipe
+    -> Uppercase Pipe
+    -> Lowercase Pipe
+    -> Customm Pipes (user defined)
+
     
 
 
