@@ -1,0 +1,6 @@
+<div class="card card-body">
+    <span class="text-center">
+        <h3>{{btnCount}}</h3>
+    </span>
+    <button [ngClass]="btnLable < 0 ? 'btn btn-danger' : ' btn btn-primary'" (click)="btnHitCount()"><h3>{{btnLable}}</h3></button>
+</div>

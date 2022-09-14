@@ -13,8 +13,8 @@ export class EmployeeComponent  {
    @Input("address")
    addr=""
 
-   @Input()
-   emp={id:0,name:'',salary:0}
+   @Input("employees")
+   emps=[{id:0,name:'',salary:0}]
  
   
 

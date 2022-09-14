@@ -18,5 +18,4 @@ emps=[
   {id:14,name: 'Joshua',salary:5336},  
 ]
   
-
 }

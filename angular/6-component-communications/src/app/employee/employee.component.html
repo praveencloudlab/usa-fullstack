@@ -1,5 +1,17 @@
-<tr>
-<td>{{emp.id}}</td>
-<td>{{emp.name}}</td>
-<td>{{emp.salary}}</td>
-</tr>
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+         </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let emp of emps">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </tbody>
+</table>
