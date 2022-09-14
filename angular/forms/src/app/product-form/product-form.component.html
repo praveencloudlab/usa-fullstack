@@ -1,0 +1,40 @@
+<div>
+    <div class="row">
+
+        <div class="col-md-5 col-12">
+            
+            <form [formGroup]="productForm" (ngSubmit)="handleSubmit()" >
+
+                <div class="form-group">
+                    <label class="form-control-label" for="productName">Product Name</label>
+                    <input formControlName="name" class="form-control" id="productName"/>
+                    <span class="text-danger" *ngIf="isSubmited && fc['name'].errors?.['required']">Product name is required</span>
+                    <span class="text-danger" *ngIf="isSubmited && fc['name'].errors?.['minlength']">Product name must be at least 3 characters</span>
+
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="price">Product Price</label>
+                    <input formControlName="price" class="form-control"  id="price"/>
+                    <span class="text-danger" *ngIf="isSubmited && fc['price'].errors?.['required']">Product price is required</span>
+                    <span class="text-danger" *ngIf="isSubmited && fc['price'].errors?.['pattern']">Invalid Product Price</span>
+
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="description">Description</label>
+                    <textarea formControlName="description" class="form-control" id="description">
+                    </textarea>
+                    <span class="text-danger" *ngIf="isSubmited && fc['description'].errors?.['required']">Product description is required</span>
+
+                </div>
+                <div class="form-group mt-2 text-center">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+
+            </form>
+
+            <hr/>
+        </div>
+
+    </div>
+
+</div>
