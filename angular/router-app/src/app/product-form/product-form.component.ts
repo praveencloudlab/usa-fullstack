@@ -21,6 +21,7 @@ export class ProductFormComponent implements OnInit {
   this.id = this.actRouter.snapshot.params['id'];   // BL
   }
 
+
   ngOnInit(): void {
 
     if(!this.id){ // id value is undefined

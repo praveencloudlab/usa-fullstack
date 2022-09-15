@@ -26,9 +26,8 @@ export class ProductService {
     return this.http.put<any>(`${this.baseUrl}/${id}`, product);
   }
 
-  deleteProduct(id:number):any{
+  deleteProduct(id:number){
     return this.http.delete<any>(`${this.baseUrl}/${id}`);
   }
-
 
 }
